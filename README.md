@@ -77,8 +77,11 @@ git clean -n
 git checkout NOME_DA_BRANCH
 ```
 Desfazer as alterções da branch anterior:
+
 ```
-git reset
+$ git add . && git commit -m"SUA_MENSAGEM" git reset
 ```
-- Apagar uma branch localmente:
+- Apagar uma branch (localmente):
+```
 git branch -D NOME_DA_BRANCH
+```
