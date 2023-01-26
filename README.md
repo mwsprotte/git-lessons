@@ -76,7 +76,9 @@ git clean -n
 ```
 git checkout NOME_DA_BRANCH
 ```
-Desfazer as alterções da bran ch anterior:
+Desfazer as alterções da branch anterior:
 ```
 git reset
 ```
+- Apagar uma branch localmente:
+git branch -D NOME_DA_BRANCH
