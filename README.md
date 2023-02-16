@@ -1,6 +1,6 @@
 # Resumo Comandos Git Úteis (Bash)
 ## Introdução
-Este documento serve como guia resumindo para usar o git nativamente através de sua interface nativa (bash). Os comandos listadpos e suas descrições são de acordo com  minha necessidade pessoal.
+Este documento serve como guia resumindo para usar o git nativamente através de sua interface (bash). Os comandos listados e suas descrições são de acordo com  minha necessidade pessoal.
 ## Comandos de Download e Upload
 - Clonar um repositório:
 
@@ -29,16 +29,6 @@ $ git status && git add . && git commit -m"SUA_MENSAGEM" && git push
 
 ```
 - Baixar as alterções remotas:
-```
-git add .
-```
-```
-git commit -m"SUA_MENSAGEM"
-```
-```
-git pull
-```
-Esses comandos podem ser combinados da seguinte forma:
 
 ```
 $ git add . && git commit -m"SUA_MENSAGEM" && git pull
@@ -70,18 +60,17 @@ git checkout -b SUA_NOVA_BRANCH
 ```
 - Listar as branchs disponíveis:
 ```
-git clean -n
+git branch
 ```
 - Alterar para outra branch:
 ```
 git checkout NOME_DA_BRANCH
 ```
-Desfazer as alterções da branch anterior:
-
-```
-$ git add . && git commit -m"SUA_MENSAGEM" git reset
-```
 - Apagar uma branch (localmente):
 ```
 git branch -D NOME_DA_BRANCH
+```
+- Tornar sua branch local igual ao master remoto:
+```
+git fetch origin && git reset --hard origin/master && git clean -f
 ```
