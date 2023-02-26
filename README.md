@@ -74,3 +74,8 @@ git branch -D NOME_DA_BRANCH
 ```
 git fetch origin && git reset --hard origin/master && git clean -f
 ```
+
+
+<!-- links: 
+    https://www.atlassian.com/br/git/tutorials/syncing
+ -->
