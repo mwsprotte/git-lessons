@@ -70,7 +70,21 @@ git checkout NOME_DA_BRANCH
 ```
 git branch -D NOME_DA_BRANCH
 ```
+
+- Renomear a branch local atual:
+```
+git branch -m novo-nome-da-branch
+```
+- Renomear uma branch local a partir de outra:
+```
+git branch -m nome-atual novo-nome
+```
+
 - Tornar sua branch local igual ao master remoto:
 ```
 git fetch origin && git reset --hard origin/master && git clean -f
 ```
+
+
+<!-- ### REFERÊNCIAS:
+- https://www.atlassian.com/br/git/tutorials/what-is-version-control -->
