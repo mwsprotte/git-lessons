@@ -86,5 +86,11 @@ git fetch origin && git reset --hard origin/master && git clean -f
 ```
 
 
+<<<<<<< HEAD
 <!-- ### REFERÊNCIAS:
 - https://www.atlassian.com/br/git/tutorials/what-is-version-control -->
+=======
+<!-- links: 
+    https://www.atlassian.com/br/git/tutorials/syncing
+ -->
+>>>>>>> ee9493cee93d4fb23c7bdd890dfb8491945b32ab
