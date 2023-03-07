@@ -93,4 +93,8 @@ git diff
 
 
 <!-- ### REFERÊNCIAS:
-- https://www.atlassian.com/br/git/tutorials/what-is-version-control -->
+- https://www.atlassian.com/br/git/tutorials/what-is-version-control 
+- https://opensource.com/article/20/4/git-merge-conflict
+- https://www.treinaweb.com.br/blog/comandos-do-git-que-voce-precisa-conhecer-parte-1#:~:text=Para%20renomear%20a%20sua%20atual,m%20%2C%20passando%20o%20novo%20nome.
+
+-->
