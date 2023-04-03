@@ -89,6 +89,11 @@ git fetch origin && git reset --hard origin/master && git clean -f
 ```
 git diff
 ```
+- Para atualizar sua branch local em relação a master completamente sincronizada com a remota:
+
+```
+git checkout master && git fetch origin && git reset --hard origin/master && git clean -f && git checkout SUA_BRANCH && git merge master
+``` 
 
 
 
