@@ -1,14 +1,13 @@
-# Resumo Comandos Git Úteis (Bash)
-## Introdução
-Este documento serve como guia resumindo para usar o git nativamente através de sua interface (bash). Os comandos listados e suas descrições são de acordo com  minha necessidade pessoal.
-## Comandos de Download e Upload
-- Clonar um repositório:
+# Compiled of Git Commands
+This repository it’s my personal little compiled of Git commands that I consider useful. I made this based in my diary use and expect this can be useful for another peoples.
+
+- Clone a repository:
 
 ```
-git clone LINK_DO_REPOSITÓRIO.git
+git clone REPOSITORY_LINK.git
 ```
 
-- Subir suas alterações para este repositório (para a ramificação principal):
+- Upload modification to actual repository:
 ```
 git status
 ```
@@ -22,29 +21,29 @@ git commit -m"SUA_MENSAGEM"
 git push
 ```
 
-Esses comandos podem ser combinados da seguinte forma:
+This commands may be combined like this:
 
 ```
-$ git status && git add . && git commit -m"SUA_MENSAGEM" && git push
+$ git status && git add . && git commit -m"MESSAGE" && git push
 
 ```
-- Baixar as alterções remotas:
+- To download the remote modifications:
 
 ```
-$ git add . && git commit -m"SUA_MENSAGEM" && git pull
+git pull
 
 ```
-- Reverter as alterações para um estado de commit anterior (localmente)
+- Revert to a anterior commit (locally):
 ```
 git log
 ```
-> :bulb: **Dica:** Pra sair do log digite `:q`
+> :bulb: **Tip:** To quit type `:q`
 
 ```
-git commit -m"SUA_MENSAGEM"
+git commit -m"MESSAGE"
 ```
 ```
-git reset HASH_DO_SEU_COMMIT        
+git reset COMMIT_HASH        
 ```
 ```
 git clean -n
@@ -54,28 +53,23 @@ git clean -n
 git clean -f
 ```
 
-- Criar uma nova branch e alterar para ela:
+- To create a new branch and switch to him:
 ```
-git checkout -b SUA_NOVA_BRANCH
+git checkout -b NEW_BRANCH
 ```
-- Listar as branchs disponíveis:
+- List the available branches:
 ```
 git branch
 ```
-- Alterar para outra branch:
+- Switch to another branch:
 ```
-git checkout NOME_DA_BRANCH
+git checkout BRANCH_NAME
 ```
-- Apagar uma branch (localmente):
+- Delete a branch (locally):
 ```
-git branch -D NOME_DA_BRANCH
+git branch -D BRANCH_NAME
 ```
-- Tornar sua branch local igual ao master remoto:
+- Turn the local branch the same as remote:
 ```
 git fetch origin && git reset --hard origin/master && git clean -f
 ```
-
-
-<!-- links: 
-    https://www.atlassian.com/br/git/tutorials/syncing
- -->
