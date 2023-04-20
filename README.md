@@ -73,3 +73,16 @@ git branch -D BRANCH_NAME
 ```
 git fetch origin && git reset --hard origin/master && git clean -f
 ```
+- Rename the actual branch:
+```
+git branch -m novo-nome-da-branch
+```
+- Rename the local branch from another local:
+```
+git branch -m nome-atual novo-nome
+```
+
+- Show the conflicts with remote:
+```
+git diff
+```
