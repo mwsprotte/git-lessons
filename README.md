@@ -15,7 +15,7 @@ git status
 git add .
 ```
 ```
-git commit -m"SUA_MENSAGEM"
+git commit -m"MESSAGE"
 ```
 ```
 git push
