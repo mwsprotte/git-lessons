@@ -24,7 +24,7 @@ git push
 This commands may be combined like this:
 
 ```
-$ git status && git add . && git commit -m"MESSAGE" && git push
+git status && git add . && git commit -m"MESSAGE" && git push
 
 ```
 - To download the remote modifications:
@@ -86,3 +86,8 @@ git branch -m nome-atual novo-nome
 ```
 git diff
 ```
+
+- To init a local branch based on a remote one:
+
+git fetch origin                             # update remote tracking branch
+git checkout -b your_develop origin/develop  # create new local develop branch
